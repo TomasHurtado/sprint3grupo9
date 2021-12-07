@@ -1,47 +1,55 @@
 const express = require('express');
 const app = express();
+
 app.use(express.static('public'));
+
+//Motor de vistas
+//set es configuracion, vamos a configurar app, en el q van 2 parametros
+app.set('view engine','ejs');//en el 1ro va el motor de plantilla, en el 2do va el nombre ejs
+
+app.set('views','views');//por otro lado vamos a crear otro set, para simplificar el nombres de las vistas. utilzamos un segundo seteo/recurso.
+
 
 app.listen(process.env.PORT || 3000 , ()=>{
     console.log('Servidor funcionando');
 });
 
 app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/index.html');
+    res.render('index');
 });
 
 app.get('/productCart', (req, res) => {
-    res.sendFile(__dirname + "/views/productCart.html");
+    res.render('productCart');
 });
 
 app.get('/entrega', (req, res) => {
-    res.sendFile(__dirname + "/views/entrega.html");
+    res.render('entrega');
 });
 
 app.get('/pago', (req, res) => {
-    res.sendFile(__dirname + "/views/pago.html");
+    res.render('pago');
 });
 
 app.get('/resumen', (req, res) => {
-    res.sendFile(__dirname + "/views/resumen.html");
+    res.render('resumen');
 });
 
 app.get('/login', (req, res) => {
-    res.sendFile(__dirname + "/views/login.html");
+    res.render('login');
 });
 
 app.get('/recuperar', (req, res) => {
-    res.sendFile(__dirname + "/views/recuperar.html");
+    res.render('recuperar');
 });
 
 app.get('/register', (req, res) => {
-    res.sendFile(__dirname + "/views/register.html");
+    res.render('register');
 });
 
 app.get('/perfil', (req, res) => {
-    res.sendFile(__dirname + "/views/perfil.html");
+    res.render('perfil');
 });
 
 app.get('/productDetail', (req, res) => {
-    res.sendFile(__dirname + "/views/productDetail.html");
+    res.render('productDetail');
 });
