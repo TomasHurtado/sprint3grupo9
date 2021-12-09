@@ -309,7 +309,7 @@ body{
 }
  /*fin  caja de subtitulo*/
 
- /*main*/
+ /*main- productDetail*/
  main{
     width: 90%;
     margin: 0 auto;
@@ -379,7 +379,7 @@ main .products article{
     font-family: 'Zen Kurenaido', sans-serif;
     font-size:20px;
 }
-
+/*fin main- productDetail*/
 
 /*footer*/
 .main-footer{
@@ -419,8 +419,9 @@ h5{
     padding: 10px;
     border-radius: 5px;
 }
+/*footer*/
 
-/*fin main*/
+
 @media (max-width: 1000px){
     .card{
         flex-direction: column;

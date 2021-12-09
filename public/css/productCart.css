@@ -4,7 +4,7 @@
     padding: 0;
     
 }
-
+/*header*/
 header{
     display: flex;
     flex-direction: column;
@@ -139,10 +139,13 @@ header ul li a:hover{
     color: black;
     border-radius: 3px;
 }
+/*header*/
 
-main{
+
+/*productsCart- css*/
+.main-productCart{
     display: flex;
-    padding: 50px;
+    padding: 0px;
     background: #C5CAE9;   
     flex-direction: column;
     justify-content: center;
@@ -223,19 +226,7 @@ th {
 }
 
 
-.tabla{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    list-style-type: none;
-    text-decoration: none;
-    border-collapse: collapse;
-    
-}
-.tabla a{
-    text-decoration: none;
-    
-}
+
 .tabla-productos ul{
     display: flex;
     flex-direction: row;
@@ -324,67 +315,6 @@ h5{
 
 
 
-
-.main-footer ul li a{
-    text-decoration: none;
-    color: white;
-}
-.fomulario{
-    padding: 0px 50px;
-    color: white;
-}
-h5{
-    color: white;
-}
-.main-footer ul li {
-    text-decoration: none;
-    color: white;
-    list-style-type:none
-}
-.main-footer ul i{
-    text-decoration: none;
-    color: white;
-}
-
-.logobot
-{
-    background-color: #C5CAE9;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-
- .main-footer ul li a{
-    text-decoration: none;
-    color: white;
-    }
-.fomulario{
-    padding: 0px 50px;
-    color: white;
-}
-h5{
-    color: white;
-}
-.main-footer ul li {
-    text-decoration: none;
-    color: white;
-    list-style-type:none
-}
-.main-footer ul i{
-    text-decoration: none;
-    color: white;
-}
-
-.logobot
-{
-    background-color: #C5CAE9;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-  
 .table-responsive {
     min-height: .01%;
     overflow-x: auto;
@@ -394,9 +324,10 @@ h5{
     width: 100%;
 }
 
-/*////**/
+/*productCart- css*/
 
 @media(min-width:361px){
+    /*header*/
     header .burger-menu{
         display: none;
     }
@@ -424,7 +355,8 @@ h5{
         padding: 0 3px;
 
     }
-
+    /*
+    }*/
     .inicio {
         display: flex;
         text-align: center;
@@ -433,49 +365,57 @@ h5{
         height: 40px;
         font-size: 25px;
     }
-    /*.user-cirlcle, .carrito {
-        font-size: 35px;
-        margin: 5px;
-        align-self:auto;
-        text-decoration: none;
-        
-    }*/
+    /*
+    */
+    /*header*/
+
 
 }
 
 
 
 @media(min-width:769px){
+    /*header- home- css*/
     header .primero{
         display: flex;
         justify-content: space-between;
 
     }
-
-    .titulo{
-        font-size: 25px;
-        align-items: center;
-    }
+    /*header- home- css*/
 }
 
 
 @media screen and (max-width: 900px) {
 
+    /*footer*/
     *{
         padding: 0px;
     }
 
-    main {
+
+    /*header- home- css*/
+    .main-home {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         width:100%;
     }
+
     .titulo-compra{
         display: block;
-    
     }
+    
+    .main-home {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    /*header- home- css*/
+
+
+    /*footer*/
     footer{
       position: relative;
       bottom: 0px;
@@ -488,44 +428,14 @@ h5{
     .main-footer ul li {
       margin: 5px 0;
     }
-    .titulo{
-        font-size: 20px;
-    }
-    main {
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .titulo-compra{
-        display: block;
+    /*footer*/
+
     
-    }
+
 
 
 @media screen and (max-width:769px){
-    /*.table-responsive {
-        width: 100%;
-        margin-bottom: 15px;
-        overflow-y: hidden;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 1px solid #ddd;
-    }
-    .table-responsive > .table {
-        margin-bottom: 0;
-    }
-    .table-responsive > .table > thead > tr > th,
-    .table-responsive > .table > tbody > tr > th,
-    .table-responsive > .table > tfoot > tr > th,
-    .table-responsive > .table > thead > tr > td,
-    .table-responsive > .table > tbody > tr > td,
-    .table-responsive > .table > tfoot > tr > td {
-        white-space: nowrap;
-    }*/
-
-
-
-
+    /*productCart- css*/
     /*responsive table*/
     .table1{
         width: 100%;
@@ -535,30 +445,28 @@ h5{
     .padret2 .table2{
         width: 100%;
     }
-/*
-    .productos{
-        width: 100%;*/
-    }
+
+    
 
     .table1, .table2, .table3, .table4, thead, tbody, th, td, tr{
         display: block ;
     }
 
     
-    thead tr{
+    .table1 thead tr{
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
 
-    tr{
+    .table1 tr{
         margin: 0 0 1rem 0;
     }
 
-    tr:nth-child(odd){
+    .table1 tr:nth-child(odd){
         background: #ccc;
     }
-    td{
+    .table1 td{
         border: none;
         border-bottom: 1px solid #eee ;
         position: relative;
@@ -566,7 +474,7 @@ h5{
 
     }
 
-    td:before{
+    .table1 td:before{
         position: absolute;
         top: 0;
         left: 6px;
@@ -691,5 +599,5 @@ h5{
     }
     /*responsive table*/
 
-    
-}
+    /*productCart- css*/
+}}

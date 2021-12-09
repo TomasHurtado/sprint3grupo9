@@ -5,8 +5,8 @@
     
 }
 
-
-main{
+/*login- css*/
+.main-login{
     display: flex;
     justify-content: center;
     padding: 40px;
@@ -45,7 +45,7 @@ main{
     margin: 20px 0;
 }
 
-label{
+.login label{
     color: black;
     font-family: 'Zen Kurenaido', sans-serif;
     font-weight: bold;
@@ -55,7 +55,7 @@ label{
     color: white;
 }
 
-input{
+.login input{
     background-color: white;
     color: rgb(43, 43, 204);
 }
@@ -64,7 +64,7 @@ input{
     margin-top: 20px;
 }
 
-input, button{
+.login input, button{
     display: flex;
     max-width: 100%;
     padding: 9px;
@@ -127,8 +127,11 @@ input, button{
     font-family: 'Zen Kurenaido', sans-serif;
     font-weight: bold;
 }
+/*avisos  de abajo*/
+/*login- css*/
 
 
+/*footer*/
 .main-footer{
     display: flex;
     
@@ -167,44 +170,13 @@ h5{
     padding: 10px;
     border-radius: 5px;
 }
+/*footer*/
 
-
-
-
-.main-footer ul li a{
-    text-decoration: none;
-    color: white;
-}
-.fomulario{
-    padding: 0px 50px;
-    color: white;
-}
-h5{
-    color: white;
-}
-.main-footer ul li {
-    text-decoration: none;
-    color: white;
-    list-style-type:none
-}
-.main-footer ul i{
-    text-decoration: none;
-    color: white;
-}
-
-.logobot
-{
-    background-color: #C5CAE9;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-/*avisos  de abajo*/
 
 
 
 @media(min-width:361px){
+    /*header*/
     header .burger-menu{
         display: none;
     }
@@ -233,6 +205,8 @@ h5{
 
     }
 
+    /*
+    }*/
     .inicio {
         display: flex;
         text-align: center;
@@ -241,49 +215,48 @@ h5{
         height: 40px;
         font-size: 25px;
     }
-    /*.user-cirlcle, .carrito {
-        font-size: 35px;
-        margin: 5px;
-        align-self:auto;
-        text-decoration: none;
-        
+    /*
     }*/
+    /*header*/
 
+    /*login- css*/
     .login{
         display: flex;
         flex-direction: column;
         width: 350px;
     }
-
+    /*login- css*/
 }
 
 
 
 @media(min-width:769px){
+    /*header- home- css*/
     header .primero{
         display: flex;
         justify-content: space-between;
 
     }
+    /*header- home- css*/
 
-    .titulo{
-        font-size: 25px;
-        align-items: center;
-    }
+
 }
 
 
 @media screen and (max-width: 900px) {
 
+    /*footer*/
     *{
         padding: 0px;
     }
 
-    
+    /*header- home- css*/
     .titulo-compra{
         display: block;
     
     }
+    /*header- home- css*/
+
     footer{
       position: relative;
       bottom: 0px;
@@ -296,7 +269,6 @@ h5{
     .main-footer ul li {
       margin: 5px 0;
     }
-    .titulo{
-        font-size: 20px;
-    }
+    /*footer*/
+    
 }
